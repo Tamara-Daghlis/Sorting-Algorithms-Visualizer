@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting Algorithms Visualizerl</title>
+
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <div class="title">
+        <h1>Sorting Algorithms Visualizerl</h1>
+      </div>
+
+      <div class="control-items container-flex">
+        <button id="randomize-btn">Randomize</button>
+        <button id="solve-bnt">Solve</button>
+        <div>
+          <!-- <label >Array Length</label> -->
+          <input
+            type="range"
+            id="array-length"
+            name="array-length"
+            value="0"
+            min="0"
+            max="100"
+          />
+
+          <div class="arr-size-value">
+            <span>Array size:</span>
+            <output id="output">0</output>
+          </div>
+        </div>
+      </div>
+
+      <div id="array-container" class="container-flex array-container"></div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
